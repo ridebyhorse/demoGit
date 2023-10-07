@@ -16,6 +16,8 @@ class DocumentViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        print("This string was added for git push")
+        
         // Access the document
         document?.open(completionHandler: { (success) in
             if success {
